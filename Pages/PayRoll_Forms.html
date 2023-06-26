@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Assets/EmpFormicon.png">
-    <link rel="stylesheet" href="../CSS/PayRollForm.css">
+    <link rel="stylesheet" href="../CSS/PayRoll_Form.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Employee PayRoll Form</title>
     <script defer src="../JS/PayRoll_Form.js"></script>
@@ -21,5 +21,16 @@
             </div>
         </div>
     </header>
+
+    <div id="formId" class="form-content">
+        <form class="form" action = "#" onsubmit="save()" onreset="reset()">
+            <div class="form-head">Employee Payroll Form</div>
+            <div class="row-content">
+                <label class="label text" for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -49,7 +49,8 @@ const createEmployeePayroll = () => {
     employeePayrollData.note = getInputValueById('#notes');
 
     let date = getInputValueById('#day') + " " + getInputValueById('#month') + " " + getInputValueById('#year');
-    employeePayrollData.date = Date.parse(date);
+    employeePayrollData.StartDate = date;
+    
     alert("Employee Payroll date is populated in object: " + employeePayrollData.toString());
     return employeePayrollData;
 }

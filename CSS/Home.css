@@ -132,3 +132,15 @@ td img:first-child{
 td img{
     cursor: pointer;
 }
+
+.dept-label {
+    background: #e9fea5;
+    border-radius: 40%;
+    width: fit-content;
+    padding: 1px 7px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 8px;
+}

@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 const createInnerHTML = () => {
     const headerHTML = "<th>Profile Pic</th><th>Name</th><th>Gender</th><th>Department</th><th>Salary</th><th>Start Date</th><th>Notes</th><th>Actions</th>";
     let innerHTML = `${headerHTML}`;
-    //let empPayrollList = createEmpPayrollJSON();
     for (const empPayrollData of empPayrollList){
         innerHTML = `${innerHTML}
     <tr>
@@ -26,32 +25,6 @@ const createInnerHTML = () => {
     </tr>`;
     }
     document.querySelector('#display').innerHTML = innerHTML;
-}
-
-const createEmpPayrollJSON = () => {
-    let empPayrollListLocal = [
-        {
-            _name: 'Muskaan Sharma',
-            _gender: 'Female',
-            _department:['HR' , 'Finance'],
-            _salary: '30000',
-            _startDate: '15 Aug 2019',
-            _note: 'Fantastic',
-            _id: new Date().getTime(),
-            _profilePic: '../Assets/image1.png'
-        },
-        {
-            _name: 'Rohan Singh',
-            _gender: 'Male',
-            _department:['Finance'],
-            _salary: '20000',
-            _startDate: '10 Jul 2018',
-            _note: 'Handsome',
-            _id: new Date().getTime(),
-            _profilePic: '../Assets/image002.png'
-        }
-    ];
-    return empPayrollListLocal;
 }
 
 const getDeptHTML = (deptList) => {
